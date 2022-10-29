@@ -1,0 +1,130 @@
+body{
+    background-color: #00a2f3;
+
+}
+article{
+    background-color: rgb(26, 26, 29);
+    font:bolder;
+}
+p{
+    color: rgb(255, 255, 255);
+}
+html{
+    background-color: aliceblue;
+    height: 100%;
+}
+body{
+    background-color: rgb(35, 35, 35);
+    display: grid;
+    grid-template-columns: 300px 1fr ;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#cabecalho{
+    grid-row: 1;
+    grid-column: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #1A2930;
+}
+#cabecalho p{
+    color: #5d5d5e;
+    position: relative;
+   padding-top: 30px;
+}
+#selecao{
+    height: 100%;
+    width: 100%;
+    background-color: #F7CE3E;
+
+}
+#selecao p {
+    color: #374044;
+}
+.slide{
+    
+    position: relative;
+    display: inline;
+    text-align: center;
+    transition: 1s;
+    top: 20px;
+    margin: 50px;
+    
+}
+.selecionado{
+border: solid 0.5px #00a2f3;
+transform: scale(1.5);
+transition: ease 2s;
+}
+
+.link{
+   
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+    position: relative;
+    color: #0A1612;
+}
+.link:hover{
+    color: #F7CE3E;
+}
+#menu{
+position: relative;
+width: 20px;
+background-color: #0A1612;
+height: 150px;
+box-shadow: 10px 0 0 #F7CE3E;
+border-left: 10px solid #0A1612;
+overflow-x: hidden;
+transition: 0.5s;
+}
+#menu:hover{
+    width: 200px;
+}
+#menu ul{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+#menu ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    padding-top:10px;
+    transition: 0.2s;
+}
+#menu ul li:hover{
+    background-color: #F7CE3E;
+}
+#menu ul li a{
+    position: relative;
+    display:flex;
+    width: 100%;
+    text-decoration: none;
+    color:#ffff;
+}
+#menu ul li a .nome{
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    height: 10px;
+    line-height: 10px;
+    white-space: nowrap;
+}
+#menu ul li.active{
+    background-color: #F7CE3E;
+}
+
+#menu{
+    display: none;
+    transition: all 1s;
+}
+#menu.ativado{
+    display: block;
+}
